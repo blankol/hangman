@@ -22,7 +22,7 @@
 //      Tell player they lost.
 // Loop back to restart the game.
 
-var words = [        // Array of secret words. More will be added.
+var words = [            // Array of secret words. More will be added.
     'strawberry',
     'blackjacks',
     'lumberjack',
@@ -41,6 +41,14 @@ var words = [        // Array of secret words. More will be added.
     'civilizers',
 ]
 
-var word = function() {
-    return words[Math.floor(Math.random() * words.length)]
+var randomWord = function() {    // Function that generates words randomly.
+    return words[Math.floor(Math.random() * words.length)] 
     }
+
+var wordsArray = []             // Loop for array content 'words' to match the ammount of letters. 
+                                // When loop is done it will recognise length of words.
+for (var content = 0; content < words.length; content++) {
+        wordsArray[content] = "_"
+}
+
+// var remainingLetters = words.length 
