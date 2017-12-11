@@ -22,21 +22,25 @@
 //      Tell player they lost.
 // Loop back to restart the game.
 
-var words = [
-    'strawberry'
-    'blackjacks'
-    'lumberjack'
-    'television'
-    'Retirement'	
-    'jackhammer'
-    'mozzarella'
-    'equalizing'
-    'jeopardize'
-    'quizmaster'
-    'quicksteps'
-    'beachcombs'
-    'schematize'
-    'bankruptcy'
-    'inadequacy'
-    'civilizers'
+var words = [        // Array of secret words. More will be added.
+    'strawberry',
+    'blackjacks',
+    'lumberjack',
+    'television',
+    'Retirement',	
+    'jackhammer',
+    'mozzarella',
+    'equalizing',
+    'jeopardize',
+    'quizmaster',
+    'quicksteps',
+    'beachcombs',
+    'schematize',
+    'bankruptcy',
+    'inadequacy',
+    'civilizers',
 ]
+
+var word = function() {
+    return words[Math.floor(Math.random() * words.length)]
+    }
