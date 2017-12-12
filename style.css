@@ -4,3 +4,34 @@ body {
     font-family: 'Spectral SC', serif;
     
 }
+
+header {
+    text-align: center;
+}
+
+h1 {
+   font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.spaces {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+.lives {
+    font-size: 30px;
+    text-align: center;
+}
+
+#nine {
+    color: red;
+}
+
+#counter {
+    color: red;
+}

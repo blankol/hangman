@@ -6,10 +6,10 @@
 
 // Pseudocode:
 // Nine lives (A Hangman inspired game): 
-// Random word of ten-twelve letters long are selected by. 
+// Random word of ten-twelve letters long are selected by. (Loop)
 
-// Show player hidden word they have to guess. Show progress.
-// Get them to guess.
+// Show player hidden word they have to guess. 
+// Show progress as they guess.
 
 // Tell player to pick a single letter.
 
@@ -22,12 +22,13 @@
 //      Tell player they lost.
 // Loop back to restart the game.
 
-var words = [            // Array of secret words. More will be added.
+var words = [            
+// Array of secret words. Words must be longer than 10+.  
     'strawberry',
     'blackjacks',
     'lumberjack',
     'television',
-    'Retirement',	
+    'retirement',	
     'jackhammer',
     'mozzarella',
     'equalizing',
@@ -41,14 +42,30 @@ var words = [            // Array of secret words. More will be added.
     'civilizers',
 ]
 
-var randomWord = function() {    // Function that generates words randomly.
-    return words[Math.floor(Math.random() * words.length)] 
-    }
+var randomWord = function() {    
+    // Function that generates words randomly
+    let randomIndex = parseInt(Math.random() * words.length)
+    return words[randomIndex] 
+}
 
-var wordsArray = []             // Loop for array content 'words' to match the ammount of letters. 
-                                // When loop is done it will recognise length of words.
-for (var content = 0; content < words.length; content++) {
-        wordsArray[content] = "_"
+var wordsArray = []   
+// Loop for array content 'words' to match the amount of letters left
+          
+//get a random using the function above
+// then adapt your for loop for the random word
+
+for (var i = 0; i < words.length; i++) {
+    wordsArray[i] = '_'
+    let spacesDiv = $('.spaces')
+    spacesDiv.append('<span class="letter">_</span>') 
+
+
+
+// When loop is done it will recognise length of words
 }
 
 // var remainingLetters = words.length 
+//               < -- Keeps track of remaining letters and is set to length of words
+// while (remainingLetters > 0 ) {
+// 
+// }
