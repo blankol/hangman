@@ -24,22 +24,24 @@
 
 var words = [            
 // Array of secret words. Words must be longer than 10+.  
-    'strawberry',
-    'blackjacks',
-    'lumberjack',
-    'television',
-    'retirement',	
-    'jackhammer',
-    'mozzarella',
-    'equalizing',
-    'jeopardize',
-    'quizmaster',
-    'quicksteps',
-    'beachcombs',
-    'schematize',
-    'bankruptcy',
-    'inadequacy',
-    'civilizers',
+'strawberry',
+'thanksgiving',
+'pennsylvania',
+'intermittent',
+'exacerbation',
+'independence',
+'intelligence',
+'relationship',
+'professional',
+'organization',
+'appreciation',
+'biodiversity',
+'architecture',
+'acceleration',
+'resurrection',
+'civilization',
+'constipation',
+'exasperation',
 ]
 
 var randomWord = function() {    
@@ -54,12 +56,14 @@ var wordsArray = []
 //get a random using the function above
 // then adapt your for loop for the random word
 
-for (var i = 0; i < words.length; i++) {
+for (var i = 0; i < 12; i++) {
     wordsArray[i] = '_'
     let spacesDiv = $('.spaces')
     spacesDiv.append('<span class="letter">_</span>') 
 
-
+   // write the _ to the div with class 'spaces'
+        //select the div with class spaces
+        //then add the underscores
 
 // When loop is done it will recognise length of words
 }
